@@ -4,8 +4,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class BankingAccountTest {
     private static final double EMPTY_BALANCE = 0.0;
     private static final double DEFAULT_DEPOSIT = 100.0;
@@ -71,7 +69,6 @@ class BankingAccountTest {
         Assertions.assertEquals(DEFAULT_DEPOSIT, ba.getBalance());
         Assertions.assertEquals(EMPTY_BALANCE, ba2.getBalance());
     }
-
 
     @Test
     @DisplayName("Should make transfer")
